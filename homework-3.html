@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vet clinic</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* reset.css */
+      html,
+      body,
+      div,
+      span,
+      h1,
+      h2,
+      h3,
+      p,
+      em,
+      img,
+      ol,
+      ul,
+      li,
+      footer,
+      header,
+      nav,
+      section {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+      }
+
+      body {
+        line-height: 1;
+      }
+
+      footer,
+      header {
+        display: block;
+      }
+
+      a {
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+        text-decoration: none;
+        color: #000;
+      }
+
+      hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #cccccc;
+        margin: 1em 0;
+        padding: 0;
+      }
+
+      /* style.css */
+      html,
+      body {
+        height: 100%;
+        box-sizing: border-box;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #000;
+      }
+      *,
+      *:after,
+      :before {
+        box-sizing: inherit;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      main {
+        flex-grow: 1;
+      }
+      .header {
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+        text-align: center;
+      }
+      .logo__img {
+        width: 50px;
+        margin-left: 15px;
+      }
+      .heder__contacts {
+        margin-top: 15px;
+      }
+      .heder__email {
+        color: #488890;
+      }
+      .heder__tel {
+        margin-left: 20px;
+        margin-right: 20px;
+        color: #488890;
+      }
+      .main__content {
+        text-align: center;
+        margin-right: 20px;
+        margin-left: 20px;
+        max-width: 600px;
+      }
+      .main__title {
+        color: #006f65;
+        font-size: 37px;
+      }
+      .main__subtitle {
+        color: #006f65;
+        margin-top: 10px;
+        font-size: 15px;
+        font-style: italic;
+        text-transform: uppercase;
+      }
+      hr {
+        border-top: 1px solid #006f65;
+        box-shadow: rgb(37 39 89) 0px -7px 0px 0px;
+      }
+      .main__text {
+        margin-top: 30px;
+        font-size: 25px;
+        line-height: 1.5;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .button {
+        font-size: 17px;
+        color: #fff;
+        text-transform: uppercase;
+        width: 204px;
+        padding: 20px;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+        background-color: #92bb92;
+        border: transparent;
+      }
+      .button:hover {
+        background-color: #83ddd5;
+      }
+      .button span {
+        text-transform: uppercase;
+        text-decoration: underline;
+        margin-top: 5px;
+        display: block;
+      }
+      .footer {
+        padding: 20px;
+        height: 170px;
+        background-color: rgb(77, 106, 78);
+        text-align: center;
+        color: #fff;
+      }
+      .footer__box {
+        width: 165px;
+        margin: 0 auto;
+      }
+      .footer__title {
+        margin-top: 15px;
+        text-transform: uppercase;
+      }
+      .footer__address {
+        margin-top: 15px;
+        line-height: 1.2;
+      }
+      @media (max-width: 800px) {
+        .main {
+          flex-direction: column;
+        }
+      }
+      @media (max-width: 500px) {
+        .heder__contacts {
+          display: flex;
+          flex-direction: column;
+          margin-right: 10px;
+        }
+        .heder__tel {
+          margin: 5px 0 0 0;
+        }
+        .main__title {
+          font-size: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="#">
+        <img
+          class="logo__img"
+          src="https://allanimalsvetclinic.com/wp-content/uploads/2020/11/AAVC-Logo_Master_1000px.png"
+          alt="Logo img"
+        />
+      </a>
+      <div class="heder__contacts">
+        <a class="heder__email" href="mailto:info@allanimalsvetclinic.com"
+          >info@allanimalsvetclinic.com</a
+        >
+        <a class="heder__tel" href="tel:+3467254429">(346) 725-4429</a>
+      </div>
+    </header>
+    <main class="main d-sm-flex justify-content-end align-items-center mt-5">
+      <div class="main__content">
+        <h1 class="main__title">Vet Clinic ALL ANIMALS</h1>
+        <h2 class="main__subtitle">veterinary care for your pet</h2>
+        <hr />
+        <div
+          class="main__description-box d-flex flex-column align-items-center"
+        >
+          <p class="main__text">
+            Our vets offer a range of veterinary services, designed to help keep
+            your pet healthy and happy.
+          </p>
+          <button class="button mb-3 mt-5" type="button">
+            make an <br />
+            <span
+              ><em><strong>appointment</strong></em></span
+            >
+          </button>
+        </div>
+      </div>
+      <div class="main__img">
+        <img
+          class="img-fluid"
+          src="https://aussiedlerbote.de/wp-content/uploads/2022/05/pets.jpg"
+          alt="Cat and dog"
+        />
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__box">
+        <h3 class="footer__title">address</h3>
+        <p class="footer__address">312 College Rd, Greensboro, NC 23410 US</p>
+      </div>
+    </footer>
+    <script>
+      function info() {
+        let petOwnerName = prompt('What is your name?');
+        let pet = prompt('What kind of pet do you have?');
+
+        let petName = prompt(`What is your pet's name?`);
+        let petWeight = prompt('What is the weight of your pet?');
+        let petHelp = prompt('What help does your pet need?');
+        let tel = prompt('Enter your contact phone number:');
+        if (petWeight > 60) {
+          alert(
+            `${petOwnerName}, your application has been accepted, we will contact you shortly. The weight of your pet exceeds 60 kg, so the veterinarian will come to your house.`
+          );
+        } else {
+          alert(
+            `${petOwnerName}, your application has been accepted, we will contact you shortly.`
+          );
+        }
+      }
+      let buttonAppointment = document.querySelector('.button');
+      buttonAppointment.addEventListener('click', info);
+    </script>
+  </body>
+</html>
