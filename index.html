@@ -110,6 +110,9 @@
       .heder__email {
         color: #488890;
       }
+      a:hover {
+        color: #488890;
+      }
       .heder__tel {
         margin-left: 20px;
         margin-right: 20px;
@@ -120,6 +123,7 @@
         margin-right: 20px;
         margin-left: 20px;
         max-width: 600px;
+        min-width: 470px;
       }
       .main__title {
         color: #006f65;
@@ -183,12 +187,15 @@
         margin-top: 15px;
         line-height: 1.2;
       }
+      .img-fluid {
+        min-width: 415px;
+      }
       @media (max-width: 800px) {
         .main {
           flex-direction: column;
         }
       }
-      @media (max-width: 500px) {
+      @media (max-width: 650px) {
         .heder__contacts {
           display: flex;
           flex-direction: column;
@@ -204,7 +211,7 @@
     </style>
   </head>
   <body>
-    <header class="header">
+    <header class="header mb-5">
       <a class="logo" href="#">
         <img
           class="logo__img"
@@ -213,38 +220,41 @@
         />
       </a>
       <div class="heder__contacts">
-        <a class="heder__email" href="mailto:info@allanimalsvetclinic.com"
+        <a class="heder__email fs-5" href="mailto:info@allanimalsvetclinic.com"
           >info@allanimalsvetclinic.com</a
         >
-        <a class="heder__tel" href="tel:+3467254429">(346) 725-4429</a>
+        <a class="heder__tel fs-5" href="tel:+3467254429">(346) 725-4429</a>
       </div>
     </header>
-    <main class="main d-sm-flex justify-content-end align-items-center mt-5">
-      <div class="main__content">
-        <h1 class="main__title">Vet Clinic ALL ANIMALS</h1>
-        <h2 class="main__subtitle">veterinary care for your pet</h2>
-        <hr />
-        <div
-          class="main__description-box d-flex flex-column align-items-center"
-        >
-          <p class="main__text">
-            Our vets offer a range of veterinary services, designed to help keep
-            your pet healthy and happy.
-          </p>
-          <button class="button mb-3 mt-5" type="button">
-            make an <br />
-            <span
-              ><em><strong>appointment</strong></em></span
-            >
-          </button>
+    <!-- <main class="main d-sm-flex justify-content-evenly align-items-center mt-5"> -->
+    <main class="container">
+      <div class="row justify-content-center">
+        <div class="main__content col">
+          <h1 class="main__title">Vet Clinic ALL ANIMALS</h1>
+          <h2 class="main__subtitle">veterinary care for your pet</h2>
+          <hr />
+          <div
+            class="main__description-box d-flex flex-column align-items-center"
+          >
+            <p class="main__text">
+              Our vets offer a range of veterinary services, designed to help
+              keep your pet healthy and happy.
+            </p>
+            <button class="button mb-3 mt-5" type="button">
+              make an <br />
+              <span
+                ><em><strong>appointment</strong></em></span
+              >
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="main__img">
-        <img
-          class="img-fluid"
-          src="https://aussiedlerbote.de/wp-content/uploads/2022/05/pets.jpg"
-          alt="Cat and dog"
-        />
+        <div class="main__img col">
+          <img
+            class="img-fluid"
+            src="https://aussiedlerbote.de/wp-content/uploads/2022/05/pets.jpg"
+            alt="Cat and dog"
+          />
+        </div>
       </div>
     </main>
     <footer class="footer">
