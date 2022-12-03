@@ -89,11 +89,11 @@
       main {
         flex-grow: 1;
       }
-      .header {
+      /* .header {
         margin-top: 15px;
         display: flex;
         justify-content: space-between;
-      }
+      } */
       .container {
         max-width: 1200px;
         margin: 0 auto;
@@ -102,29 +102,34 @@
       }
       .logo__img {
         width: 50px;
-        margin-left: 15px;
+        /* margin-left: 15px; */
       }
+      /* .header {
+        margin-top: 10px;
+      } */
       .heder__contacts {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         margin-top: 15px;
       }
       .heder__email {
         color: #488890;
+        margin-right: 15px;
       }
       a:hover {
         color: #488890;
       }
       .heder__tel {
-        margin-left: 20px;
-        margin-right: 20px;
         color: #488890;
       }
-      .main__content {
+      /* .main__content {
         text-align: center;
         margin-right: 20px;
         margin-left: 20px;
         max-width: 600px;
         min-width: 470px;
-      }
+      } */
       .main__title {
         color: #006f65;
         font-size: 37px;
@@ -187,8 +192,13 @@
         margin-top: 15px;
         line-height: 1.2;
       }
-      .img-fluid {
+      /* .img-fluid {
         min-width: 415px;
+      } */
+      /* @media (max-width: 940px) {
+        row {
+          flex-direction: column;
+        }
       }
       @media (max-width: 800px) {
         .main {
@@ -207,29 +217,45 @@
         .main__title {
           font-size: 30px;
         }
-      }
+        .img-fluid {
+          min-width: 340px;
+        }
+        .main__content {
+          min-width: 340px;
+        }
+      } */
     </style>
   </head>
   <body>
-    <header class="header mb-5">
-      <a class="logo" href="#">
-        <img
-          class="logo__img"
-          src="https://allanimalsvetclinic.com/wp-content/uploads/2020/11/AAVC-Logo_Master_1000px.png"
-          alt="Logo img"
-        />
-      </a>
-      <div class="heder__contacts">
-        <a class="heder__email fs-5" href="mailto:info@allanimalsvetclinic.com"
-          >info@allanimalsvetclinic.com</a
-        >
-        <a class="heder__tel fs-5" href="tel:+3467254429">(346) 725-4429</a>
+    <header class="header container mb-5 mt-1">
+      <div class="row justify-content-between">
+        <div class="col-md-1">
+          <a class="logo" href="#">
+            <img
+              class="logo__img"
+              src="https://allanimalsvetclinic.com/wp-content/uploads/2020/11/AAVC-Logo_Master_1000px.png"
+              alt="Logo img"
+            />
+          </a>
+        </div>
+        <div class="heder__contacts col-md-6">
+          <div>
+            <a
+              class="heder__email fs-5"
+              href="mailto:info@allanimalsvetclinic.com"
+              >info@allanimalsvetclinic.com</a
+            >
+          </div>
+          <div>
+            <a class="heder__tel fs-5" href="tel:+3467254429">(346) 725-4429</a>
+          </div>
+        </div>
       </div>
     </header>
     <!-- <main class="main d-sm-flex justify-content-evenly align-items-center mt-5"> -->
     <main class="container">
-      <div class="row justify-content-center">
-        <div class="main__content col">
+      <div class="row justify-content-center align-items-center">
+        <div class="main__content col-md-6">
           <h1 class="main__title">Vet Clinic ALL ANIMALS</h1>
           <h2 class="main__subtitle">veterinary care for your pet</h2>
           <hr />
@@ -248,7 +274,7 @@
             </button>
           </div>
         </div>
-        <div class="main__img col">
+        <div class="main__img col-md-6">
           <img
             class="img-fluid"
             src="https://aussiedlerbote.de/wp-content/uploads/2022/05/pets.jpg"
